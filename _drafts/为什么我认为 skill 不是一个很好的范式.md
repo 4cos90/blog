@@ -17,7 +17,12 @@ Skill 是现在主流的 Agent 扩展方式，概念很简单——给 Agent 装
 
 在没装 Skill 之前，Claude Code 遇到要创建 docx 的情况，会自己写个 Python 脚本创建文档——我本地有 Python 开发环境，没有问题。
 
-装了 minimax-word 之后，同样的需求，调用了 Skill 用 C# 来创建文档。问题来了：我电脑上没有 .NET 开发环境。于是 Claude Code 主动安装了 .NET SDK——并且成功用 C# 创建了文档。
+装了 minimax-word 之后，同样的需求，调用了 Skill 用 C# 来创建文档。问题来了：我电脑上没有 .NET 开发环境。于是 Claude Code 主动执行了skill中的安装脚本。安装了 .NET SDK——并且成功用 C# 创建了文档。
+
+
+![ScreenShot_2026-05-30_221921_279.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/d999030cfaa64011833d019b23a3c36f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgNGNvczkw:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMjc5Njc5NDk1NTQ0MTc4NCJ9&rk3s=e9ecf3d6&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1780237189&x-orig-sign=SK4wY4TObqy5OAQZJFMla4JgOQ8%3D)
+
+![微信图片_20260530210621_264_244.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/fad3a706e79b457c85f3550c0be29c15~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgNGNvczkw:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMjc5Njc5NDk1NTQ0MTc4NCJ9&rk3s=e9ecf3d6&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1780236825&x-orig-sign=bq9tBYzcieRgNnGV6bCLipPuPV0%3D)
 
 这里有两个让我不舒服的点：
 
